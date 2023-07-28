@@ -1,0 +1,122 @@
+body{
+    background-color: #fdfaf3;
+    font-family: 'Dai Banna SIL', serif;
+    font-family: 'Poppins', sans-serif;
+margin: 0px;
+}
+
+.header{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+    margin: 0px;
+    border-bottom: 2px solid black;
+    background-color: #fdfaf3;
+    z-index: 1000;
+}
+
+.header1{
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 1rem;    
+}
+
+.name{
+    border-right: 2px solid black;
+    margin: 0px;
+}
+
+.resume{
+    display: flex;
+    margin:0px;
+}
+
+.main{
+    width:100%;
+    height:750px;
+}
+.Main-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+
+.left-content{
+    width: 60%;
+    border-right: 2px solid black;
+    height: 750px;
+    padding-top: 0;
+}
+
+.right-content{
+    width: 40%;
+    height: 750px;
+    background-color:black;
+}
+
+.skills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    margin-left: 1rem;
+}
+.skills2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    margin-top:10px;
+    margin-left: 1rem;
+}
+.skil:hover{
+    background-color: black;
+    color:white;
+    border-color:rgb(1,60,7);
+    transition:all 0.3s;
+    cursor: pointer;
+}
+
+.skil{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    border: 2px solid black;
+    min-width: 100px;
+    border-radius: 4rem;
+}
+
+.para, 
+.list{
+    font-family: 'Dai Banna SIL', serif;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid rgb(1, 60, 17);
+    padding:1rem;
+    padding-right: 2rem;
+}
+
+.list{
+    padding-left:2rem;
+    padding-top:0px;
+    width:100%;
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .right-content,.left-content{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 950px)
+{
+    .Main-component{
+        flex-direction: column-reverse;
+    }
+    .right-content,.left-content{
+        width: 100%;
+    }
+}
